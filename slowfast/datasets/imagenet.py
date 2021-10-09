@@ -10,7 +10,7 @@ import torch.utils.data
 from PIL import Image
 from torchvision import transforms as transforms_tv
 
-import slowfast.datasets.transform as transform
+# import .transform as transform
 import slowfast.utils.logging as logging
 
 # import cv2
