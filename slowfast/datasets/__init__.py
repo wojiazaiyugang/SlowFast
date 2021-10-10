@@ -7,8 +7,9 @@ from .charades import Charades  # noqa
 from .imagenet import Imagenet  # noqa
 from .kinetics import Kinetics  # noqa
 from .ssv2 import Ssv2  # noqa
+from .kth import Kth
 
 try:
-    from .ptv_datasets import Ptvcharades, Ptvkinetics, Ptvssv2  # noqa
+    from .ptv_datasets import Ptvcharades, Ptvkinetics, Ptvssv2  # n            oqa
 except Exception:
     print("Please update your PyTorchVideo to latest master")
