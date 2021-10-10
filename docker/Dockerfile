@@ -47,3 +47,4 @@ RUN pip install pycocotools
 RUN pip install 'git+https://github.com/facebookresearch/fairscale'
 RUN pip install 'git+https://github.com/facebookresearch/detectron2.git'
 #进入slow fast项目安装slow fast: python setup.py build develop
+# 训练命令 python tools/run_net.py --cfg configs/Kinetics/c2/SLOWFAST_8x8_R50.yaml DATA.PATH_TO_DATA_DIR /workspace/SlowFast/data/KTH NUM_GPUS 1
