@@ -64,8 +64,8 @@ def main():
             model.half()
         # with open(save_checkpoint_file, 'wb') as file:
         #     torch.save({"model_state": model.state_dict()}, file)
-        fast_pathway= torch.randn(1, 3, 8, 256, 256)
-        slow_pathway= torch.randn(1, 3, 2, 256, 256)
+        fast_pathway= torch.randn(1, 3, 32, 256, 256)
+        slow_pathway= torch.randn(1, 3, 4, 256, 256)
         fast_pathway = fast_pathway.to(device)
         slow_pathway = slow_pathway.to(device)
         inputs = [slow_pathway, fast_pathway]
