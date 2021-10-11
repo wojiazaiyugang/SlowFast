@@ -146,7 +146,9 @@ class AsyncVis:
                 task = self.task_queue.get()
                 if isinstance(task, _StopToken):
                     break
-
+                for pred in task.action_preds:
+                    print(np.argmax(pred), end=" ")
+                print("")
                 frames = draw_predictions(task, self.video_vis)
                 task.frames = np.array(frames)
                 self.result_queue.put(task)
