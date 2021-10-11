@@ -8,6 +8,7 @@ FilePath: /ml/slowfast/transform_model.py
 '''
 #-*- coding:utf-8 -*-
 import os
+import sys
 from collections import OrderedDict
 import torch
 import argparse

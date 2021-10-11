@@ -74,7 +74,7 @@ def main():
             input_shape.append(dim)
         if len(input_shape):
             input_shapes.append(input_shape)
-    print(input_shapes)  # [[1, 3, 4, 256, 256], [1, 3, 32, 256, 256]]
+    print(input_shapes)  # [[1, 3, 4, 256, 256]=786432, [1, 3, 32, 256, 256]]=6291456
 
     engine = build_engine(onnx_path, input_shapes)
     save_engine(engine, engine_name)
