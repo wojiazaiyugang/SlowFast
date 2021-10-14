@@ -2,7 +2,7 @@ TRAIN:
   ENABLE: True
   DATASET: kinetics
   BATCH_SIZE: 8
-  EVAL_PERIOD: 10
+  EVAL_PERIOD: 1
   CHECKPOINT_PERIOD: 10
   AUTO_RESUME: False
 DATA:
@@ -12,8 +12,8 @@ DATA:
   TRAIN_CROP_SIZE: 224
   TEST_CROP_SIZE: 256
   INPUT_CHANNEL_NUM: [3, 3]
-  PATH_PREFIX: /workspace/SlowFast/data/basketball_action/
-  PATH_TO_DATA_DIR: /workspace/SlowFast/data/basketball_action/
+  PATH_PREFIX: /workspace/SlowFast/data/
+  PATH_TO_DATA_DIR: /workspace/SlowFast/data/
 SLOWFAST:
   ALPHA: 8
   BETA_INV: 8
