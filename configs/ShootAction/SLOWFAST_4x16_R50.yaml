@@ -12,8 +12,8 @@ DATA:
   TRAIN_CROP_SIZE: 224
   TEST_CROP_SIZE: 256
   INPUT_CHANNEL_NUM: [3, 3]
-  PATH_PREFIX: /workspace/SlowFast/data/shoot_action
-  PATH_TO_DATA_DIR: /workspace/SlowFast/data/shoot_action
+  PATH_PREFIX: /mnt/nfs-storage/yujiannan/data/ShootAction
+  PATH_TO_DATA_DIR: /mnt/nfs-storage/yujiannan/data/ShootAction
 SLOWFAST:
   ALPHA: 8
   BETA_INV: 8
@@ -46,7 +46,7 @@ SOLVER:
   WARMUP_START_LR: 0.01
   OPTIMIZING_METHOD: sgd
 MODEL:
-  NUM_CLASSES: 5
+  NUM_CLASSES: 2
   ARCH: slowfast
   MODEL_NAME: SlowFast
   LOSS_FUNC: cross_entropy
